@@ -1,0 +1,30 @@
+
+<div class="container-fluid">
+	{% extends 'header.html' %}
+
+	{% block content %}
+
+
+	<form action="add/" method="post">
+		{% csrf_token %}
+		<div class="form-group">
+			<label for="num1">Enter Num1:</label>
+			<input type="number" value="10" name="num1" id="num1" class="form-control" placeholder="Enter First number">
+		</div>
+		<div class="form-group">
+			<label for="num1">Enter Num2:</label>
+			<input type="number" value="10" name="num2" id="num2" class="form-control" placeholder="Enter Second number">
+		</div>
+		<div class="form-group">
+			<input type="submit" class="btn btn-primary">
+			<a href="/">Hello</a>
+		</div>
+		<div class="form-group"></div>
+		<i class="fa fa-ambulance" aria-hidden="true"></i>
+		
+	</form>
+	<code>hello world</code>
+
+</div>
+
+{% endblock %}
